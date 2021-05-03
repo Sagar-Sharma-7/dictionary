@@ -106,7 +106,6 @@ dd{
     }
     .container{
         width: 100vw;
-        height: 100vh;
         justify-content: flex-start;
     }
 
@@ -141,7 +140,7 @@ dd{
     }
     .container{
         width: 100vw;
-        height: 100vw;
+        justify-content: flex-start;
     }
     .searchBox{
         height: 90px;
