@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Dictionary</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="searchBox">
+            <form>
+                <input type="text" id="userWord" placeholder="Search any word..." autocomplete="off">
+                <input type="submit" value="search" id="search"> 
+            </form>
+        </div>
+
+        <div class="contentBox">
+            <p id="word" class="errorText"></p>
+            <p id="speech" class="errorText"></p>
+
+            <hr>
+            <p id="text" class="errorText"></p>
+            <hr>
+            <dl>
+                <dt id="def1"></dt>
+                <dd>
+                    <p id="defination1" class="errorText"></p>
+                </dd>
+                <dt id="eg1"></dt>
+                <dd>
+                    <p id="example1" class="errorText"></p>
+                </dd>
+                <hr>
+                <p id="offensive" class="errorText"></p>
+            </dl>
+        </div>
+    </div>
+  <script src="./public/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #7C40FF;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.container{
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.searchBox{
+    width: 70vw;
+    height: 15vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 1.5vh;
+    background-color: #1e1e1e;
+}
+
+#userWord{
+    width: 50vw;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    height: 5vh;
+    padding-left: 5vh;
+    border-radius: 0px 0px 0px 5px;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+#search{
+    width: 15vw;
+    outline: none;
+    border: none;
+    height: 5vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contentBox{
+    margin: 3vh 0vw;
+    width: 60vw;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 2vh 2vw;
+}
+
+#word{
+    font-size: 2rem;
+    margin-bottom: 0px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+
+#speech{
+    color: grey;
+    font-family: 'Nunito', sans-serif;
+    margin-top: -8px;
+}
+
+hr{
+    margin: 1vh 0vw;
+}
+
+#text{
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+}
+dl{
+    font-family: 'Handlee', cursive;
+    font-weight: 600;
+}
+dd{
+    margin-left: 3vw;  
+    margin-bottom: 2vh;
+}
+
+@media all and (max-width: 600px){
+    body{
+        margin: 0px 0px;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        justify-content: flex-start;
+    }
+
+    .searchBox{
+        width: 100vw;
+        border-radius: 0px;
+        margin-bottom: 1vh;
+        min-height: 100px;
+    }
+
+    #userWord{
+        width: 70vw;
+    }
+
+    #search{
+        width: 25vw;
+        height: 10vh;
+    }
+
+    .contentBox{
+        width: 100vw;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+@media all and (max-height:500px){
+    body{
+        margin: 0px 0px;
+    }
+    .container{
+        width: 100vw;
+        height: 100vw;
+    }
+    .searchBox{
+        height: 90px;
+        width: 100vw;
+        border-radius: 0px;
+    }
+    #search{
+        height: 50px;
+        width: 25vw;
+    }
+    #userWord{
+        height: 50px;
+        width: 70vw;
+    }
+    .contentBox{
+        width: 100vw;
+    }
+}
